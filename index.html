@@ -282,7 +282,13 @@ filters
 </div>
 </body>
 <script>
-    
+ //menu
+var button='button';
+var arrow='arrow';
+$("button.arrow").on('click',function(e){
+  $("button.arrow").toggleClass("cross");
+  $(".menu").slideToggle("");
+});
 
 // To keep our code clean and modular, all custom functionality will be contained inside a single object literal called "checkboxFilter".
 
